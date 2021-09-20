@@ -166,21 +166,69 @@ compareYear( movies[0].year, movies[1].year, movies[2].year );
 
 // 23. Log the title of all three movies one by one.
 
-function titlesOf(array1 , array2 ,array3)
-for ( let title of array1 & array2 & array3 ){
-  console.log(array1 & array2 & array3);
+for(i=0;i<=movies.length;i++){
+  console.log(movies[i].title)
 }
 
 // 24. Log if the title of the first movie is `Hannah` or not
 
+// movies.forEach(element => {
+//   console.log(movies[0].actors,movies[1].actors,movies[2].actors);
+ 
+// });
+
+for(i=0;i<movies.length;i++){
+  console.log(movies[i].actors)
+}
+
 // 25. Log the number of actors in all three movies one by one
+
+for ( m of movies ){
+  for ( a of m.actors ){
+    console.log(a)
+  }
+}
 
 // 26. Log the number of genres in all three movies one by one
 
+for ( m of movies ){
+  for ( g of m.genres){
+    console.log(g)
+  }
+}
+
 // 27. Log the name of all the movies with more than 1 genre
+
+for ( m of movies ){
+  if ( m.genres.length > 1 ){
+    console.log(m.title)
+  }
+}
 
 // 28. Log the name of all the movies with more than 1 actors
 
+for ( m of movies ){
+  if ( m.actors.length > 1 ){
+    console.log(m.title)
+  }
+}
+
 // 29. Log the name of all the movies with exactly 3 actors
 
+for ( m of movies ){
+  if ( m.actors.length == 3 ){
+    console.log(m.title)
+  }
+}
+
 // 30. Log the name of all the movies with year `2018`
+
+if ( movies[0].year == '2018' ){
+  console.log(movies[0].title)
+} if ( movies[1] == '2018' ){
+  console.log(movies[1].title)
+} if ( movies[2].year == '2018'){
+  console.log ( movies[2].title)
+}
+  
+
