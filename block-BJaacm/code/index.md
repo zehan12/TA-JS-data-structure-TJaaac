@@ -15,12 +15,13 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![name](./hello.jpg)
 
 2. Answer the following with reason:
 
 - `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
+- `user === newUser;`// true and referencing the same object
+- `user.name === newUser.name;`// 
 - `user.name == newUser.name;`
 - `user.sibling == newUser.sibling;`
 - `user.sibling === newUser.sibling;`
