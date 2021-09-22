@@ -104,6 +104,23 @@ let blogs = [
 ];
 
 // Your code goes here
+
+let clonedBlogs = [];
+
+for  ( i = 0 ; i < blogs.length ; i++ ){
+     
+     clonedBlogs.push({...blogs[i]});
+}
+
+------
+
+let clonedBlogs = [];
+
+for  ( i = 0 ; i < blogs.length ; i++ ){
+     
+     clonedBlogs[i] = {...blogs[i]};
+}
+
 ```
 
 5. Clone the `question` variable into a new variable named `questionClone`
@@ -129,6 +146,19 @@ var questions = [
 ];
 
 // Your code goes here
+
+let questionClone = [];
+
+for ( let i = 0 ; i < questions.length ; i++ ){
+   
+
+  let cloneobj = { ...questions[i], responses: [ ...questions[i].responses ] }
+  questionClone.push( cloneobj )
+
+}
+
+let cloneByJSON = JSON.parse(JSON.stringify(questions));
+
 ```
 
 6. Clone the `allBlogs` variable into a new variable named `allBlogsClone`
@@ -156,6 +186,27 @@ var allBlogs = {
 };
 
 // Your code goes here
+
+let cloneComment = {};
+
+for ( let i = 0 ; i < allBlogs.comments.length ; i++){
+
+   cloneComment.push({...allBlogs.comments[i]});
+
+}
+
+let allBlogsClone = [];
+
+for ( let i = 0 ; i < allBlogs.length ; i++ ){
+
+    let cloneAll = { ...allBlogs[i], comment: [ ...cloneComment] };
+
+    allBlogsClone.push( cloneAll );
+
+}
+
+
+
 ```
 
 7. Clone the `person` variable into a new variable named `clonedPerson`
@@ -189,13 +240,33 @@ let person = [
 ];
 
 // Your code goes here
+
+let clonedPerson = [];
+
+for ( i = 0 ; i < person.length ; i++ ){
+
+    clonedPerson.push({...person[i]})
+
+}
+
 ```
 
 8. Write a function named `cloneObject` that accepts an object and returns the clone of the object
 
 ```js
-function cloneObject() {
+function cloneObject(array) {
   // your code
+
+  let cloneArray = {};
+
+  for ( i = 0 ; i < array.length ; i++ ){
+
+    cloneArray.push({...array[i]});
+
+  }
+  
+  return cloneArray
+
 }
 
 // Run the test below to check your function
