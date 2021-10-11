@@ -42,6 +42,7 @@ function odd(array1,array2){
        oddCollection.push(num)
     } 
   } 
+
   for ( num of array2 ){
     if ( num % 2 != 0  ){
       oddCollection.push(num)
@@ -105,6 +106,14 @@ function revert(array) {
   return array.reverse()
 }
 
+function revert(arr){
+  let final = [];
+  for ( let i = arr.length - 1 ; i <= 0 ; i--  ){
+    final.push(arr[i]);
+  }
+    return final;
+}
+
 // Uncomment the code below and test the output
 // console.log(revert([1, 2, 3, 4])); // [4, 3, 2, 1]
 // console.log(revert(['a', 'd', 'c', 'b'])); // ['b', 'c', 'd', 'a']
@@ -132,6 +141,20 @@ function clear(arr) {
     }
   }
   return newArr.reverse()
+}
+
+function isUnwanted(value){
+  return value == false || value == null || value == "" || value == undefined || value == 0 
+}
+
+function clear(arr){
+  let final = [];
+  for ( let value of arr ){
+    if ( !isUnwanted(value) ){
+      final.push(value);
+    }
+  } 
+    return final;
 }
 
 // Uncomment the code below and test the output
