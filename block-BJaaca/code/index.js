@@ -2,7 +2,7 @@
 
 //  - Create a variable named `character` using `let` assign a value of empty object.
 
-let character = {}
+let character = {} ;
 
 //  - Go to this [Arya Stark](https://awoiaf.westeros.org/index.php/Arya_Stark)
 
@@ -57,9 +57,9 @@ character.isAdult=  ( character['character-age'] > 18 );
 
 character.changeIsAdult = function(){
     if ( character.isAdult == true ){
-        character.isAdult = false
+        character.isAdult = false ;
     } else {
-        character.isAdult = true
+        character.isAdult = true ;
     }
 }
 
