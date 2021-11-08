@@ -45,10 +45,28 @@ average(numbers);
 
 console.log(Math.min(...numbers));
 
+let high = 0;
+for( let i = 0 ; i < numbers.length ; i++ ){
+        if ( high < numbers[i] ){
+            high = numbers[i]
+        }
+
+}console.log(high);
+
 // 5. Find the lowest number in the array and print it to the console using console.log()
 
 
 console.log(Math.max(...numbers));
+
+var smallest = arr[0];
+
+for(var i=1; i<arr.length; i++){
+    if(arr[i] < smallest){
+        smallest = arr[i];   
+    }
+}
+
+console.log(smallest);
 
 // 6. Find the even numbers in the array and print them to the console using console.log()
 
