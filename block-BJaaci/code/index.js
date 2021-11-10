@@ -40,6 +40,7 @@ movies[2].title //'hannah'
 
 // 3. Log the value of the title key in the second movie (index 1) of the array named `movies`
 
+movies[1].title //Area X: Annihilation
 
 
 // 4. Log the value of the year key in the first movie of the array named `movies`
@@ -144,6 +145,10 @@ function natalie(array){
     return false ;
   }
 }
+
+let portman = array => array === "Natalie Portman";
+
+portman(movies[1].actors[1])
 
 natalie(movies[1].actors[1]);
 
