@@ -158,7 +158,7 @@ for ( let hou of got.houses){
 
 
 let allDescription = function() {
-for ( i = 0 ; i < got.houses[0].people.length ; i++  ){
+for ( let i = 0 ; i < got.houses[0].people.length ; i++  ){
 
   console.log(`${got.houses[0].people[i].description} \n ${got.houses[0].people.length}`)
 }
@@ -169,3 +169,9 @@ for ( i = 0 ; i < got.houses[1].people.length ; i++  ){
 }
 
 // 20. Only the the description whose length is more than 30. (use .length property on string to get the length)
+
+let compareLengthOfDescriptio = function(){
+  for( let i = 0 ; i < got.houses; i++ ){
+    if(  )
+  }
+}
